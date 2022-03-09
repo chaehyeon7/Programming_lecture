@@ -4,3 +4,8 @@
 
 def solution(mylist):
     return [int(i) for i in mylist]
+
+# map함수 이용
+def solution(mylist):
+    answer = list(map(len, mylist))
+    return answer
