@@ -8,7 +8,8 @@
 # [['A', 'B'], ['X', 'Y'], ['1']]	['A', 'B', 'X' ,'Y', '1']
 
 
-import itertools
 def solution(mylist):
-    answer =list(''.join(list(map(''.join,mylist))))
+    answer = mylist[0]
+    for i in range(1,len(mylist)):
+        answer += mylist[i]
     return answer
