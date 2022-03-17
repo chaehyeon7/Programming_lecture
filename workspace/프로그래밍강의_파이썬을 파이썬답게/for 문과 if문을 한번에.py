@@ -13,6 +13,7 @@ def solution(mylist):
 
 # for문과 if를 나눠서 쓸경우 (시간이 더 오래 걸림)
 mylist = [3, 2, 6, 7]
-answer = [] for number in mylist:
+answer = []
+for number in mylist:
     if number % 2 == 0:
         answer.append(number**2)
